@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ratnala Yugandar | Data Analyst Portfolio</title>
+
+  <meta name="description" content="Official portfolio of Ratnala Yugandar – Entry-Level Data Analyst specializing in Power BI, SQL, Python, and Analytics." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #4f46e5;      /* Indigo */
+      --secondary: #0f172a;    /* Navy */
+      --accent: #22c55e;       /* Green */
+      --gradient: linear-gradient(135deg, #4f46e5, #06b6d4);
+      --bg-light: #f8fafc;
+      --card-bg: #ffffff;
+      --text-dark: #020617;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    a { color: #ffffff; text-decoration: none; }
+
+    /* ---------- NAVBAR ---------- */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo { color: #ffffff; font-weight: 700; }
+
+    .nav-links a {
+      margin-left: 24px;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    .nav-links a:hover { opacity: 1; }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      background: var(--gradient);
+      color: #ffffff;
+      padding: 100px 24px;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h1 { font-size: 48px; margin-bottom: 12px; }
+    .hero h1 span { color: #bbf7d0; }
+    .hero h2 { font-weight: 400; margin-bottom: 24px; }
+
+    .hero p { max-width: 520px; margin-bottom: 30px; }
+
+    .hero-btns a {
+      display: inline-block;
+      margin-right: 16px;
+      padding: 14px 26px;
+      border-radius: 30px;
+      font-weight: 500;
+      background: #ffffff;
+      color: var(--secondary);
+    }
+
+    .hero-btns a.secondary {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+
+    .hero-photo {
+      text-align: center;
+    }
+
+    .hero-photo img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #ffffff;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    /* ---------- SECTIONS ---------- */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 24px;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      width: 80px;
+      height: 5px;
+      background: var(--gradient);
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      border-radius: 10px;
+    }
+
+    /* ---------- CARDS ---------- */
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 36px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    ul { padding-left: 18px; }
+    li { margin-bottom: 10px; }
+
+    .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .project-btn {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 24px;
+      border-radius: 999px;
+      background: var(--gradient);
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact-card p { margin-bottom: 12px; }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #020617;
+      color: #c7d2fe;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      .hero-container { grid-template-columns: 1fr; text-align: center; }
+      .hero p { margin: auto auto 30px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">Ratnala Yugandar</div>
+    <div class="nav-links">
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="resume">
+  <div class="hero-container">
+    <div>
+      <h1>Ratnala <span>Yugandar</span></h1>
+      <h2>Entry-Level Data Analyst | Hyderabad, India</h2>
+      <p>
+        Final-year B.Tech student in Artificial Intelligence & Data Science.
+        Strong expertise in Power BI dashboards, SQL, Python, Excel, and business-focused analytics.
+      </p>
+      <div class="hero-btns">
+        <a href="Ratnala_Yugandar_Data_Analyst_Resume.pdf" target="_blank">Download Resume</a>
+        <a class="secondary" href="#projects">View Projects</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <!-- Replace profile.jpg with your actual photo file -->
+      <img src="profile.jpg" alt="Ratnala Yugandar Photo">
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="container" id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+
+  <div class="grid-2">
+    <div class="card">
+      <span class="badge">Power BI Dashboard</span>
+      <h3>Global AI Evolution & Economic Impact (2018–2025)</h3>
+      <p>
+        Comprehensive analysis of global AI market growth, adoption, revenue impact, productivity, and workforce changes.
+      </p>
+      <ul>
+        <li>Built KPI cards, CAGR metrics, adoption & trend visuals</li>
+        <li>Analyzed AI job creation vs elimination</li>
+        <li>Designed executive-ready dashboards</li>
+      </ul>
+      <a class="project-btn" href="Global AI Evolution & Economic Impact Analysis (2018–2025)  Power BI Dashboard.pdf" target="_blank">View Dashboard</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Power BI Dashboard</span>
+      <h3>Online Retail Revenue & Customer Analysis</h3>
+      <p>
+        Revenue and customer behavior analysis to identify trends, high-value customers, and top-performing countries.
+      </p>
+      <ul>
+        <li>Performed data cleaning & EDA</li>
+        <li>Built revenue, country & customer insights dashboards</li>
+        <li>Identified growth opportunities</li>
+      </ul>
+      <a class="project-btn" href="Online Retail Data Set.pdf" target="_blank">View Dashboard</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="container" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card contact-card">
+    <p><strong>Email:</strong> yugandar2711@gmail.com</p>
+    <p><strong>Phone:</strong> +91-9505403457</p>
+    <p><strong>Location:</strong> Hyderabad, India</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ratnala-yugandar" target="_blank">linkedin.com/in/ratnala-yugandar</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank">github.com</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Ratnala Yugandar | Data Analyst Portfolio
+</footer>
+
+</body>
+</html>
